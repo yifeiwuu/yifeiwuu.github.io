@@ -1,0 +1,139 @@
+ <style > body {
+     position: fixed;
+     height: 100%;
+     width: 100%;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+
+ }
+
+ .main {
+     position: relative;
+     height: 100vh;
+     width: 100%;
+ }
+
+ img {
+     width: 70%;  
+ }
+
+.scaling{
+    transition:1s;
+}
+.scaling:hover{
+    transform: scale(1.1);
+}
+
+
+ .helper {
+     display: inline-block;
+     height: 100%;
+     vertical-align: middle;
+     text-align: center;
+ }
+
+
+ footer {
+     position: static;
+     text-align: center;
+     width: 100%;
+     bottom: 0px;
+     height: 30px;
+ }
+
+ .container {
+     max-height: 100vh;
+     overflow: scroll;
+     scroll-snap-type: y mandatory;
+ }
+
+ .snap {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     scroll-snap-align: start;
+ }
+
+
+ .center {
+     position: absolute;
+
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     width: 100%;
+
+ }
+
+ .penpivot {
+     top: 35%;
+     left: 30%;
+     width: 20%;
+     position: absolute;
+     animation: penpivot 1s linear infinite;
+     animation-direction: alternate;
+ }
+
+ @keyframes penpivot {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     50% {
+         transform: rotate(20deg);
+     }
+
+     100% {
+         transform: rotate(0deg);
+     }
+
+
+ }
+
+ .scribble_one {
+     width: 20%;
+     top: 30%;
+     position: absolute;
+     animation: scribble_one 2s linear infinite;
+     animation-direction: alternate;
+
+ }
+
+ @keyframes scribble_one {
+     0% {
+         transform: rotate(-20deg);
+     }
+
+     50% {
+         transform: rotate(10deg);
+     }
+ }
+
+
+
+ .scribble_two {
+     top: 15%;
+     left: 60%;
+     width: 10%;
+     position: absolute;
+     animation: scribble_two 4000s linear infinite;
+     animation-direction: alternate;
+
+ }
+
+ @keyframes scribble_two {
+     0% {
+         transform: rotate(0deg);
+     }
+
+     50% {
+         transform: rotate(500000deg);
+     }
+ }
+
+
+ </style >
